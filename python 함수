@@ -16,5 +16,16 @@
  3) sys.stdin.readline().rstrip : 입력을 최대한 빠르게 받음 
  4) print(f"정답은 {answer}입니다.")
 
-4. 조건문과 반복문
+4. 자주 사용되는 내장 함수 
+ 1) sorted() with key
+  - sorted(array, key=lamda x:x[1], reverse = True)
+
+2)nCr(combination), nPr(permutations), product(중복순열), combination_with_replacement(중복 조합)
+ - from intertools import combination, permutations, product,combination_with_replacement
  
+3) 등장 횟수 세기
+ -from collections import Counter
+
+4) 최대공약수,최소공배수
+ -import math
+      gcd()최대공약수 lcm()최소공배수
