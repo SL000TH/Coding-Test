@@ -26,6 +26,11 @@
 3) 등장 횟수 세기
  -from collections import Counter
 
+def solution(k, tangerine):
+    numbers = sorted(Counter(tangerine).values(), reverse=True)
+
+
+
 4) 최대공약수,최소공배수
  -import math
       gcd()최대공약수 lcm()최소공배수
