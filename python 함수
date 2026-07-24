@@ -21,7 +21,7 @@
   - sorted(array, key=lamda x:x[1], reverse = True)
 
 2)nCr(combination), nPr(permutations), product(중복순열), combination_with_replacement(중복 조합)
- - from intertools import combination, permutations, product,combination_with_replacement
+ - from itertools import combination, permutations, product,combination_with_replacement
  
 3) 등장 횟수 세기
  -from collections import Counter
