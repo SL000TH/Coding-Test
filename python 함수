@@ -20,8 +20,8 @@
  1) sorted() with key
   - sorted(array, key=lamda x:x[1], reverse = True)
 
-2)nCr(combination), nPr(permutations), product(중복순열), combination_with_replacement(중복 조합)
- - from itertools import combination, permutations, product,combination_with_replacement
+2)nCr(combinations), nPr(permutations), product(중복순열), combination_with_replacement(중복 조합)
+ - from itertools import combinations, permutations, product,combination_with_replacement
  
 3) 등장 횟수 세기
  -from collections import Counter
