@@ -6,18 +6,22 @@
 성공적으로 수행할 수 있으면 1을, 아닐 경우 0을 리턴해주면 됩니다.
 
 def solution(s):
-    i = 0
-
-    while i < len(s) - 1:
-        if s[i] == s[i + 1]:
-            s = s[:i] + s[i + 2:]
-            i = 0
+    answer = []
+    for i in s:
+        if not(answer):
+            answer.append(i)
         else:
-            i += 1
-
-    if s == "":
-        answer = 1
+            if(answer[-1] == i):
+                answer.pop()
+            else:
+                answer.append(i)    
+if not answer:
+        return 1
     else:
-        answer = 0
+        return 0
 
-    return answer
+스택 = 리스트 (위에서 부터 꺼냄) answer.pop (가장 늦게 넣은것을 꺼냄)
+answer.append 리스트 채우기 
+리스트가 비어있으면 false, 원소가 하나라 있으면 true 
+if는 true일때만 실행 false일때는 실행 안함 
+
